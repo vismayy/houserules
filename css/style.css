@@ -10,29 +10,90 @@ html, body{
 .mainpage {
     height:100%;
     width:100%;
-    background-color: blue;
 
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
+
+    margin:0;
+    padding:0;
 }
 
-.header {
+div.header {
     height:10%;
     width:100%;
+    
+    background-color: darkblue;
+    color:white;
+    
+    display:flex;
+    justify-content: center;    /*Horizontal Center*/
+    align-items: center;        /*Vertical Center*/
+
+    font-size:16pt;
+    
+    margin:0;
+    padding:0;
 }
 
-.header {
+div.navigation {
     height:10%;
     width:100%;
+    display:flex;
+    flex-direction: row;
+    
+    margin:0;
+    padding:0;
 }
 
-.header {
+.navigationbutton {
+    width:25vw;
+    height:100%;
+    
+    font-size:16pt;
+
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+
+    margin:0;
+    padding:0;
+}
+
+div.content {
     height:75%;
     width:100%;
+    box-sizing: border-box;
+
+
+    display:flex;
+    flex-direction: column;
+    font-size: 16pt;
+
+    margin:0;
+    padding:0;
+
+    background-color:rgba(203, 202, 201, 1);
+    
 }
 
-.header {
+div.footer {
     height:5%;
     width:100%;
+    display:flex;
+    flex-direction: column;
+
+    margin:0;
+    padding:0;
+
+    background-color: black;
+    color: white;
+}
+
+h2{
+    margin:0;
+    padding:0;
+}
+
+ol {
+    margin:5%;
 }
