@@ -94,6 +94,20 @@ h2{
     padding:0;
 }
 
-ol {
-    margin:5%;
+ol.mainol {
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-left:5%;
+    margin-right:5%;
+
+    font-size: 16pt;
+}
+
+p.summarytext {
+    margin-top:2%;
+    margin-bottom:2%;
+    margin-left:5%;
+    margin-right:5%;
+
+    font-size: 24pt;
 }
