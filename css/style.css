@@ -11,8 +11,8 @@ html, body{
 
 div.mainpage {
     /*display size, color and border*/
-        height:100vh;
-        width:100vw;
+        height:100%;
+        width:100%;
         background-color:rgba(0, 25, 50, 1);
     /*spacing*/   
         box-sizing: border-box;
@@ -77,20 +77,16 @@ div.content {
         width:100%;
         height:80%;
         background-color:rgba(0, 10, 20, 0.5);
-    /*border*/
-        box-sizing: border-box;
     /*Spacing*/
-        padding:10px;
+        box-sizing: border-box;
+        padding:5%;
         justify-content: center;
         align-items: center;
     /*font*/
-        font-size: 16pt;
+        font-size: 12pt;
         color: white;
     /*flex:*/
-        display:flex;
-        flex-direction: column;
-    
-        overflow-y: hidden;
+        overflow-y: scroll;
 }
 
 
@@ -109,7 +105,7 @@ table {
     width:90%;
 
     margin: auto;
-
+    margin-top:5vh;
     border-collapse: collapse;
     text-align: center;
 }
@@ -117,8 +113,8 @@ table {
 
 th, td {
     vertical-align: middle;  /* center text vertically */
-    padding: 0.5em;
     border: 1px dotted grey;
+    padding: 0.5em;
 }
 
 td:first-child {
