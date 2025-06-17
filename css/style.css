@@ -1,113 +1,130 @@
-/*General Styles that is used for box-style website*/
-
 html, body{
-    height:100vh;
-    width:100vw;
-    margin:0;
-    padding:0;
+    /*display size, color and border*/
+        height:100vh;
+        width:100vw;
+    /*spacing*/    
+        margin:0;
+        padding:0;
+    /*fonts*/
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.mainpage {
-    height:100%;
-    width:100%;
-
-    display:flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-    margin:0;
-    padding:0;
+div.mainpage {
+    /*display size, color and border*/
+        height:100vh;
+        width:100vw;
+        background-color:rgba(0, 25, 50, 1);
+    /*spacing*/   
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    /*flex display*/
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;  
 }
 
 div.header {
-    height:10%;
-    width:100%;
-    
-    background-color: darkblue;
-    color:white;
-    
-    display:flex;
-    justify-content: center;    /*Horizontal Center*/
-    align-items: center;        /*Vertical Center*/
-
-    font-size:16pt;
-    
-    margin:0;
-    padding:0;
+    /*display size & color*/
+        height:10%;
+        width:100%;
+    /*spacing*/
+        margin:0;
+        padding:0;
+    /*font*/
+        color:white;
+        font-size:16pt;
+    /*flex display*/
+        display:flex;
+        flex-direction: column;
+        justify-content: center;    /*Horizontal Center*/
+        align-items: center;        /*Vertical Center*/   
 }
 
 div.navigation {
-    height:10%;
-    width:100%;
-    display:flex;
-    flex-direction: row;
+    /*display size, color and border*/
+        height:10%;
+        width:100%;
+    /*Spacing*/
+        margin:0;
+        padding:0;
+    /*flex display*/    
+        display:flex;
+        flex-direction: row;
     
-    margin:0;
-    padding:0;
 }
 
 .navigationbutton {
-    width:25vw;
-    height:100%;
-    
-    font-size:16pt;
-
-    background-color:rgba(0, 0, 0, 0.5);
-    color: white;
-
-    margin:0;
-    padding:0;
+    /*display size, color and border*/
+        width:calc((100vw)/3);
+        height:100%;
+        background-color:rgba(0, 10, 20, 0.5);
+    /*Spacing*/
+        margin:0;
+        padding:0;
+    /*border*/
+        border:none;
+    /*font*/
+        font-size:16pt;
+        color:white;
 }
+
+
+
 
 div.content {
-    height:75%;
-    width:100%;
-    box-sizing: border-box;
-
-
-    display:flex;
-    flex-direction: column;
-    font-size: 16pt;
-
-    margin:0;
-    padding:0;
-
-    background-color:lightgray;
+    /*display size and color*/
+        width:100%;
+        height:80%;
+        background-color:rgba(0, 10, 20, 0.5);
+    /*border*/
+        box-sizing: border-box;
+    /*Spacing*/
+        padding:10px;
+        justify-content: center;
+        align-items: center;
+    /*font*/
+        font-size: 16pt;
+        color: white;
+    /*flex:*/
+        display:flex;
+        flex-direction: column;
     
+        overflow-y: hidden;
 }
 
-div.footer {
-    height:5%;
-    width:100%;
-    display:flex;
-    flex-direction: column;
 
-    margin:0;
-    padding:0;
 
-    background-color: black;
-    color: white;
+button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
 }
 
-h2{
+
+h1, h2, h3, h4, h5, h6, p {
     margin:0;
     padding:0;
 }
 
-ol.mainol {
-    margin-top:2%;
-    margin-bottom:2%;
-    margin-left:5%;
-    margin-right:5%;
+table {
+    width:90%;
 
-    font-size: 16pt;
+    margin: auto;
+
+    border-collapse: collapse;
+    text-align: center;
 }
 
-p.summarytext {
-    margin-top:2%;
-    margin-bottom:2%;
-    margin-left:5%;
-    margin-right:5%;
 
-    font-size: 24pt;
+th, td {
+    vertical-align: middle;  /* center text vertically */
+    padding: 0.5em;
+    border: 1px dotted grey;
+}
+
+td:first-child {
+    width: 40%;
+}
+
+td:last-child {
+    width: 60%;
 }
