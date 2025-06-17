@@ -12,7 +12,7 @@
     
 
     <div class="header">
-        <h2>&#x1F4CB;House&nbsp;Rulebook&#x1F4CB;</h2>
+        <h2>&#x1F4E2; Any Updates</h2>
     </div>
     
 
@@ -38,15 +38,19 @@
     
     <div class="content">
         <p class="summarytext">
-            No updates yet.
+            No updates.
         </p>
 
         <br>
-
+        <p id="last-updated"></p>
     </div>
     
 
 
 </div>
+<script>
+  const updatedDate = new Date(document.lastModified);
+  document.getElementById("last-updated").innerText = "Last Updated: " + updatedDate.toLocaleDateString();
+</script>
 </body>
 </html>
