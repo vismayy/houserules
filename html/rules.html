@@ -38,7 +38,7 @@
     
     <div class="content">
         <p>
-            These are general rules to be followed by each household members. Change in rules are permitted if majority agrees. Last Update on: <date>2025-Jun-16</date><br>
+            These are general rules to be followed by each household members. Change in rules are permitted if majority agrees. <p id="last-updated"></p><br>
         </p>
 
 
@@ -57,5 +57,9 @@
     
     
 </div>
+<script>
+  const updatedDate = new Date(document.lastModified);
+  document.getElementById("last-updated").innerText = "Last Updated: " + updatedDate.toLocaleDateString();
+</script>
 </body>
 </html>

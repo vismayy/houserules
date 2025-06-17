@@ -94,7 +94,7 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2">Last Update on: <date>2025-Jun-16</date></td>
+                <td colspan="2"><p id="last-updated"></p></td>
             </tr>
         </table>
 
@@ -104,5 +104,9 @@
 
 
 </div>
+<script>
+  const updatedDate = new Date(document.lastModified);
+  document.getElementById("last-updated").innerText = "Last Updated: " + updatedDate.toLocaleDateString();
+</script>
 </body>
 </html>
