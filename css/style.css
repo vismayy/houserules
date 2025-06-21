@@ -6,7 +6,7 @@ html, body{
         margin:0;
         padding:0;
     /*fonts*/
-        font-family: Consolas, "Lucida Console", monospace;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 div.mainpage {
@@ -69,7 +69,20 @@ div.navigation {
         color:white;
 }
 
-
+.activenavigationbutton {
+    /*display size, color and border*/
+        width:calc((100vw)/3);
+        height:100%;
+        background-color:#2980b9;
+    /*Spacing*/
+        margin:0;
+        padding:0;
+    /*border*/
+        border:none;
+    /*font*/
+        font-size:16pt;
+        color:white;
+}
 
 
 div.content {
@@ -123,5 +136,9 @@ td:first-child {
 
 td:last-child {
     width: 60%;
+}
+
+i {
+    color: grey;
 }
 
